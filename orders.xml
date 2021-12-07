@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orderListing>
+    <order>
+        <id>10793</id>
+        <date>September 2, 2:21PM</date>
+        <customer>Colonel Mobsin</customer>
+        <payment>Paid</payment>
+        <fulfillment>Fulfilled</fulfillment>
+        <total>250.00</total>
+        <items>1</items>
+        <delivery>In-store pickup</delivery>
+    </order>
+    <order>
+        <id>10794</id>
+        <date>September 17, 7:01PM</date>
+        <customer>The Mighty Ferlan of Scarolok</customer>
+        <payment>Paid</payment>
+        <fulfillment>Fulfilled</fulfillment>
+        <total>1700.00</total>
+        <items>5</items>
+        <delivery>Express</delivery>
+    </order>
+    <order>
+        <id>10795</id>
+        <date>September 25, 11:00AM</date>
+        <customer>Arczoik Temeredo</customer>
+        <payment>Paid</payment>
+        <fulfillment>Fulfilled</fulfillment>
+        <total>550.00</total>
+        <items>2</items>
+        <delivery>Free delivery</delivery>
+    </order>
+    <order>
+        <id>10796</id>
+        <date>October 5, 8:00AM</date>
+        <customer>Hapnir Moban</customer>
+        <payment>Paid</payment>
+        <fulfillment>Ready for delivery</fulfillment>
+        <total>600.00</total>
+        <items>3</items>
+        <delivery>Free delivery</delivery>
+    </order>
+    <order>
+        <id>10797</id>
+        <date>October 5, 12:20PM</date>
+        <customer>Blolorm Luxons</customer>
+        <payment>Pending</payment>
+        <fulfillment>Unfulfilled</fulfillment>
+        <total>1300.00</total>
+        <items>4</items>
+        <delivery>Express</delivery>
+    </order>
+</orderListing>
