@@ -70,21 +70,62 @@
     </nav>
     </form>
     <!-- Content -->
+
+    <?php
+
+    $xml = new DomDocument('1.0', 'utf-8');
+    $xml->load('products.xml', LIBXML_NOBLANKS);
+    $xml->formatOutput = true;
+    $products = $xml->getElementsByTagName('product');
+    $product_info = array('empty','empty','empty','empty','empty','empty','empty');
+    $selected_product;
+    $id_to_edit = $_POST['product_to_edit'];
+
+    foreach($products as $product){
+      $counter = 0;
+      $aisle_name = $product->parentNode->nodeName;
+
+      foreach($product->childNodes as $element){
+        $product_info[$counter] = $element->textContent;
+        $counter++;
+      }
+
+     if ($product_info[0] == $id_to_edit){
+       $selected_product = $product;
+       break;
+     }
+
+    }
+
+
+
+
+    ?>
+
+
+
+
+
+
+
+
+
+
     <div class="container-fluid pt-4 px-5">
       <!-- Top Bar -->
       <div class="row mb-4">
         <div class="col">
-          <h2>Add Product</h2>
+          <h2>Edit Product</h2>
         </div>
       </div>
       <div class="container-fluid table-container shadow-sm p-4 mb-4">
-        <form action="add_product.php" method="post" class="create">
+        <form action="edit_product.php" method="post" class="create">
           <div class="form-group row">
             <label for="imageURL" class="col-sm-2 col-form-label"
               >Image URL</label
             >
             <div class="col-sm-10">
-              <input type="text" class="form-control" value="images/your_image.png" name="image" required>
+              <input type="text" class="form-control" value=<?php echo $product_info[4];?> name="image" required>
             </div>
           </div>
 
@@ -93,7 +134,7 @@
               >Image Width</label
             >
             <div class="col-sm-10">
-              <input type="text" class="form-control" value='width="400px"' name="width" required>
+              <input type="text" class="form-control" value=<?php echo $product_info[5];?> name="width" required>
             </div>
           </div>
 
@@ -102,7 +143,7 @@
               >Image Height</label
             >
             <div class="col-sm-10">
-              <input type="text" class="form-control" value='height="400px"' name="height" required>
+              <input type="text" class="form-control" value=<?php echo $product_info[6];?> name="height" required>
             </div>
           </div>
 
@@ -111,7 +152,7 @@
               >Product Name</label
             >
             <div class="col-sm-10">
-              <input type="text" class="form-control" placeholder="Name" name="name" required>
+              <input type="text" class="form-control" value=<?php echo $product_info[1];?> name="name" required>
             </div>
           </div>
           <div class="form-group row">
@@ -119,25 +160,15 @@
               >Product Price</label
             >
             <div class="col-sm-10">
-              <input type="number" class="form-control" placeholder="Price" name="price" required>
+              <input type="number" class="form-control" value=<?php echo $product_info[2];?> name="price" required>
             </div>
           </div>
-          <div class="form-group row">
-            <label for="productID" class="col-sm-2 col-form-label"
-              >Product ID</label
-            >
-            <div class="col-sm-10">
-              <input type="text" class="form-control" placeholder="ID" name="id" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="aisleName" class="col-sm-2 col-form-label"
-              >Aisle</label
-            >
-            <div class="col-sm-10">
-              <input type="text" class="form-control" placeholder="Aisle" name="aisle" required>
-            </div>
-          </div>
+
+              <input type="hidden" class="form-control" value=<?php echo $product_info[0];?> name="id" required>
+
+
+              <input type="hidden" class="form-control" value=<?php echo $product->parentNode->nodeName;?> name="aisle" required>
+
           <div class="form-group row">
             <label for="productDescription" class="col-sm-2 col-form-label"
               >Product Description</label
@@ -147,16 +178,15 @@
                 id="description"
                 name="description"
                 class="productDescriptionTextarea"
-                placeholder="Description"
                 cols="75"
                 rows="3"
                 required
-              ></textarea>
+              ><?php echo $product_info[3];?></textarea>
             </div>
           </div>
 
           <div class="form-group row">
-            <button type="submit" class="btn btn-success">Create</button>
+            <button type="submit" class="btn btn-success">Save</button>
           </div>
         </form>
       </div>

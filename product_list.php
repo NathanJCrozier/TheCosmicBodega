@@ -127,11 +127,10 @@
                 echo '<td class="text-center">' . $product_info[2] . '</td>';
                 echo '<td class="text-center"><span class="badge rounded-pill bg-success">In Stock</span></td>';
                 echo '<td>' . $aisle_name . '</td>';
-                #echo '<td class="product-description">' . $product_info[3] . '</td>';
                 echo '<td>
-                  <a href="./back-store-edit-product.html"><button type="button" class="btn btn-primary btn-sm ms-1">
+                  <button type="submit" form="edit" value =" ' . $product_info[0] . '" name="product_to_edit" class="btn btn-primary btn-sm ms-1">
                     <i class="bi bi-pencil"></i>
-                  </button></a>';
+                  </button>';
                 echo '</td>';
                 echo '<td>';
                 echo '<button type="submit" form="delete" value =" ' . $product_info[0] . '" onclick="return confirm(\'Are you sure?\nThis action cannot be undone.\')" class="btn btn-sm btn-danger" name="product_to_delete" ><i class="bi bi-trash-fill"></i></button></td>';
@@ -177,5 +176,6 @@
       </div>
     </div>
   </body>
+  <form id="edit" action="edit_product_form.php" method="post"></form>
   <form id="delete" action="" method="post"></form>
 </html>

@@ -14,6 +14,7 @@
 <?php
 
 $aisle = $_GET['aisle'];
+$aisle_formatted = $_GET['aisle_name'];
 $xml = simplexml_load_file("products.xml");
 ?>
 
@@ -22,7 +23,7 @@ $xml = simplexml_load_file("products.xml");
       <a class="navbar-brand" href="index.html">
       <img src="images/logo.png" width="30" height="30">
       <img src="images/back_arrow.png" width="20" height="20">
-        <?php echo $aisle;?>
+        <?php echo $aisle_formatted;?>
       </a>
 
     </nav>

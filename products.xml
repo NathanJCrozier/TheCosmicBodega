@@ -7,6 +7,8 @@
       <price>240</price>
       <description>The humble frumble. A fruit originally grown on TASIT-9. Sought after for its sharp flavor and toxic aroma. Pairs fantastically with a Junglovian eel fillet and a side of bufallant milk.</description>
       <image>images/frumble.png</image>
+      <i_width> </i_width>
+      <i_height> </i_height>
     </product>
     <product>
       <id>1</id>
@@ -14,6 +16,8 @@
       <price>133</price>
       <description>A fruit that is both spicy and tart. It will attempt to digest you while you eat it. Some say this just adds to the flavor complexity. We hope you're up to the challenge.</description>
       <image>images/kurporpa.png</image>
+      <i_width> </i_width>
+      <i_height> </i_height>
     </product>
     <product>
       <id>2</id>
@@ -53,6 +57,24 @@
       <i_width> </i_width>
       <i_height> </i_height>
     </product>
+    <product>
+      <id>9</id>
+      <name>Cantaloupe</name>
+      <price>340</price>
+      <description>Guys listen, this is the sweatiest melon you've ever seen.</description>
+      <image>images/cantaloupe.jpg</image>
+      <i_width>width="400px"</i_width>
+      <i_height>height="400px"</i_height>
+    </product>
+    <product>
+      <id>10</id>
+      <name>Alien</name>
+      <price>500</price>
+      <description>There are ethical implications here, but we'd rather not delve too deep into this stuff. We're just a grocery store.</description>
+      <image>images/thonk.jpg</image>
+      <i_width>width="400px"</i_width>
+      <i_height>height="400px"</i_height>
+    </product>
   </Produce>
   <Pantry>
     <product>
@@ -83,4 +105,5 @@
       <i_height> </i_height>
     </product>
   </Pantry>
+  <Dairy_and_Eggs/>
 </aisle>
