@@ -20,7 +20,7 @@ $xml = simplexml_load_file("products.xml");
 
 <div class="header container-fluid" id="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.php">
       <img src="images/logo.png" width="30" height="30">
       <img src="images/back_arrow.png" width="20" height="20">
         <?php echo $aisle_formatted;?>
