@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="orders.html">Orders</a>
+                        <a class="nav-link" href="view_orders.php">Orders</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="product_list.html">Products</a>
@@ -212,7 +212,7 @@
                 if ($_POST['product_' . $itemIndex] != null) {
                     $newItem = $dom_orders->createElement('item');
                     $newItem = $currentItems->appendChild($newItem);
-                    
+
                     $newItem->appendChild($dom_orders->createElement('name', $_POST['product_' . $itemIndex]));
                     $newItem->appendChild($dom_orders->createElement('price', $_POST['price_' . $itemIndex]));
                     $newItem->appendChild($dom_orders->createElement('quantity', $_POST['quantity_' . $itemIndex]));
