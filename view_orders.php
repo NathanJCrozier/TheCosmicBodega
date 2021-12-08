@@ -74,7 +74,6 @@
                             <th scope="col" width="5%">Order</th>
                             <th scope="col" width="15%">Date</th>
                             <th scope="col" width="15%">Customer</th>
-                            <th scope="col" width="10%">Payment Status</th>
                             <th scope="col" width="10%">Fulfillment Status</th>
                             <th scope="col" width="5%">Total (GS)</th>
                             <th scope="col" width="3%">Items</th>
@@ -91,13 +90,6 @@
                                 echo "<td>#$order->id</td>";
                                 echo "<td>$order->date</td>";
                                 echo "<td>$order->customer</td>";
-                                if ($order->payment == "Paid") {
-                                    echo "<td><span class=\"badge rounded-pill bg-success\">Paid</span></td>";
-                                } elseif ($order->payment == "Pending") {
-                                    echo "<td><span class=\"badge rounded-pill bg-warning\">Pending</span></td>";
-                                } else {
-                                    echo "<td><span class=\"badge rounded-pill bg-danger\">Cancelled</span></td>";
-                                }
                                 if ($order->fulfillment == "Fulfilled") {
                                     echo "<td><span class=\"badge rounded-pill bg-success\">Fulfilled</span></td>";
                                 } elseif ($order->fulfillment == "Unfulfilled") {
@@ -110,7 +102,7 @@
                                 echo "<td>$order->total</td>";
                                 echo "<td>$order->items</td>";
                                 echo "<td>$order->delivery</td>";
-                                echo "<td><div class=\"d-flex\"><a href=\"edit-order-$order->id.html\"><button class=\"btn btn-sm btn-primary\"><i class=\"bi bi-pencil text-white\"></i></button></a>
+                                echo "<td><div class=\"d-flex\"><a href=\"edit_order.php\"><button class=\"btn btn-sm btn-primary\" onclick=\"setEditID($order->id)\"><i class=\"bi bi-pencil text-white\"></i></button></a>
                                 <button class=\"btn btn-sm btn-danger ms-1\">X</button></div></td>";
                             }
                         ?>
@@ -119,5 +111,6 @@
             </div>
         </div>
     </div>
+    <script src="editOrder.js"></script>
 </body>
 </html>
