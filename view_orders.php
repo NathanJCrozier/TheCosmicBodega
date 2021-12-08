@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="orders.html">Orders</a>
+                        <a class="nav-link" href="view_orders.php">Orders</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="product_list.php">Products</a>
