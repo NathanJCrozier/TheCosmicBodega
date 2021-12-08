@@ -56,7 +56,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="index.html"
+                href="index.php"
                 >Online Store</a
               >
             </li>

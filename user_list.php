@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include('database/database.php');
 
@@ -11,7 +11,7 @@ $result = $conn->query($query);
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">The Cosmic Bodega</a>
+    <a class="navbar-brand" href="index.php">The Cosmic Bodega</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -34,7 +34,7 @@ $result = $conn->query($query);
         <li class="nav-item">
           <a
             class="nav-link"
-            href="index.html"
+            href="index.php"
             >Online Store</a
           >
         </li>
@@ -47,7 +47,7 @@ $result = $conn->query($query);
 
 
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
-    
+
   echo "<p>Login user ".$_SESSION['name']." </p>"  ;
   echo " <a class='btn btn-danger' href='database/logout.php'> Logout </a>";
 }

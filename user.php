@@ -25,7 +25,7 @@
                     <a class="nav-link" href="user_list.html">Customers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Online Store</a>
+                    <a class="nav-link" href="index.php">Online Store</a>
                 </li>
             </ul>
         </div>
@@ -59,13 +59,13 @@
 
 <div class="container mt-6 mb-5">
     <div class="row">
-    
-        
-    
+
+
+
         </div>
         <?php include('database/database.php');
         $q=$_GET['q'];
-        
+
         if (isset($_GET['q'])){
             if ($q=='e'){
                 $url='database/edit.php';
@@ -73,44 +73,44 @@
                 $query="select * from users where id=".$id;
                 $result = $conn->query($query);
                 $row = $result->fetch_assoc();
-                
+
                 if ($result->num_rows == 0){
                     $url="database/add.php";
                 }
-            
+
             }
             else{
                 $url="database/add.php";
             }
-            
+
         }else{
-            
+
             $url="database/add.php";
         }
         ?>
             <form method="POST" action="<?php echo $url; ?>">
             <div class="p-3 py-5">
                 <div class="row mt-3">
-                    <div class="col-md-6"><label class="labels">First Name</label><input required name="first_name" type="text" class="form-control" placeholder="enter first name" 
+                    <div class="col-md-6"><label class="labels">First Name</label><input required name="first_name" type="text" class="form-control" placeholder="enter first name"
                     value="<?php if ($result->num_rows > 0){echo $row['first_name'];} ?>
                     "></div>
                     <?php if ($result->num_rows > 0){
                         echo "<input required type='hidden' value='".$row['id']."' name='id'>";
                     } ?>
-                    
+
                     <div class="col-md-6"><label class="labels">Last Name</label><input required type="text" class="form-control" name="last_name" value="<?php if ($result->num_rows > 0){echo $row['last_name'];} ?>" placeholder="enter last name"></div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-12"><label class="labels">Phone Number</label><input required type="text" class="form-control" name="number" placeholder="enter phone number" value="<?php if ($result->num_rows > 0){echo $row['number'];} ?>"></div>
-                  
+
                     <div class="col-md-12"><label class="labels">Street Address</label><input required type="text" class="form-control" name="address" placeholder="enter street address" value="<?php if ($result->num_rows > 0){echo $row['address'];} ?>"></div>
-                  
+
                     <div class="col-md-12"><label class="labels">Postal Code</label><input required type="text" class="form-control" name="postal" placeholder="enter postal code" value="<?php if ($result->num_rows > 0){echo $row['postal'];} ?>"></div>
 
 
                     <div class="row mt-3">
                         <div class="col-md-6"><label class="labels">Area</label><input required type="text" class="form-control" placeholder="enter area" name="area" value="<?php if ($result->num_rows > 0){echo $row['area'];} ?>"></div>
-                       
+
                          <div class="col-md-6"><label class="labels">Planet</label><input required type="text" class="form-control" value="<?php if ($result->num_rows > 0){echo $row['planet'];} ?>" name="planet"placeholder="enter planet"></div>
                     </div>
 

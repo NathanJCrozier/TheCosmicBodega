@@ -13,7 +13,7 @@
 
   <div class="header container-fluid" id="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.php">
       <img src="images/logo.png" width="30" height="30">
       The Cosmic Bodega
       </a>
@@ -36,7 +36,7 @@
             <a class="dropdown-item" href="view_aisle.php?aisle_name=Pantry&aisle=Pantry">
               Pantry
             </a>
-            <a class="dropdown-item" href="view_aisle.php?aisle_name=Dairy and Eggs&aisle=DairyandEggs">
+            <a class="dropdown-item" href="view_aisle.php?aisle_name=Dairy and Eggs&aisle=Dairy_and_Eggs">
               Dairy and Eggs
             </a>
             <a class="dropdown-item" href="view_aisle.php?aisle_name=Beverages&aisle=Beverages">

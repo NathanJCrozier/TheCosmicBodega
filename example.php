@@ -48,7 +48,7 @@ session_start();
 
     <div class="header container-fluid" id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="https://image.flaticon.com/icons/png/512/124/124610.png" max-width="100" width="100" overflow: hidden margin-right: 1em;>
                 The Cosmic Bodega
             </a>
@@ -61,7 +61,7 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="index.php">
                             Home
                         </a>
                     </li>
