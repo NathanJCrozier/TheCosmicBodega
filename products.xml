@@ -2,6 +2,24 @@
 <aisle>
   <Produce>
     <product>
+      <id>0</id>
+      <name>Frumble</name>
+      <price>240</price>
+      <description>The humble frumble. A fruit originally grown on TASIT-9. Sought after for its sharp flavor and toxic aroma. Pairs fantastically with a Junglovian eel fillet and a side of bufallant milk.</description>
+      <image>images/frumble.png</image>
+      <i_width> </i_width>
+      <i_height> </i_height>
+    </product>
+    <product>
+      <id>1</id>
+      <name>Kurporpa</name>
+      <price>133</price>
+      <description>A fruit that is both spicy and tart. It will attempt to digest you while you eat it. Some say this just adds to the flavor complexity. We hope you're up to the challenge.</description>
+      <image>images/kurporpa.png</image>
+      <i_width> </i_width>
+      <i_height> </i_height>
+    </product>
+    <product>
       <id>2</id>
       <name>Squelp</name>
       <price>14</price>
