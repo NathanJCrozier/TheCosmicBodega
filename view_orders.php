@@ -56,8 +56,7 @@
                 <div class="col">
                     <div class = "d-flex justify-content-end">
                         <div class="px-1 pt-1 bd-highlight">
-                            <button type="button" class="btn btn-primary">Create order</button>
-                            <button type="button" class="btn btn-danger check-reveal">Delete</button>
+                            <a href="add_order.php"><button type="button" class="btn btn-primary">Create order</button></a>
                         </div>
                     </div>
                 </div>
@@ -72,8 +71,8 @@
                         <tr>
                             <th scope="col" width="3%"><input class="form-check-input" type="checkbox"></th>
                             <th scope="col" width="5%">Order</th>
-                            <th scope="col" width="15%">Date</th>
-                            <th scope="col" width="15%">Customer</th>
+                            <!-- <th scope="col" width="15%">Date</th>
+                            <th scope="col" width="15%">Customer</th> -->
                             <th scope="col" width="10%">Fulfillment Status</th>
                             <!-- <th scope="col" width="5%">Total (GS)</th> -->
                             <th scope="col" width="10%">Delivery Method</th>
@@ -87,12 +86,14 @@
                                 echo "<tr>";
                                 echo "<td><input class=\"form-check-input\" type=\"checkbox\">";
                                 echo "<td>#$order->id</td>";
-                                echo "<td>$order->date</td>";
-                                echo "<td>$order->customer</td>";
+                                // echo "<td>$order->date</td>";
+                                // echo "<td>$order->customer</td>";
                                 if ($order->fulfillment == "Fulfilled") {
                                     echo "<td><span class=\"badge rounded-pill bg-success\">Fulfilled</span></td>";
                                 } elseif ($order->fulfillment == "Unfulfilled") {
                                     echo "<td><span class=\"badge rounded-pill bg-warning\">Unfulfilled</span></td>";
+                                } elseif ($order->fulfillment == "Ready for pickup") {
+                                    echo "<td><span class=\"badge rounded-pill bg-primary\">Ready for pickup</span></td>";
                                 } elseif ($order->fulfillment == "Ready for delivery") {
                                     echo "<td><span class=\"badge rounded-pill bg-primary\">Ready for delivery</span></td>";
                                 } else {
@@ -101,7 +102,7 @@
                                 // echo "<td>$order->total</td>";
                                 echo "<td>$order->delivery</td>";
                                 echo "<td><div class=\"d-flex\"><a href=\"edit_order.php\"><button class=\"btn btn-sm btn-primary\" onclick=\"setEditID($order->id)\"><i class=\"bi bi-pencil text-white\"></i></button></a>
-                                <button class=\"btn btn-sm btn-danger ms-1\">X</button></div></td>";
+                                <button type=\"submit\" form=\"delete\" name=\"delete\" value=\"$order->id\" onclick=\"return confirm('Are you sure? This action cannot be undone.')\" class=\"btn btn-sm btn-danger ms-1\">X</button></div></td>";
                             }
                         ?>
                     </tbody>
@@ -109,6 +110,23 @@
             </div>
         </div>
     </div>
+    <?php
+        if (isset($_POST['delete'])) {
+            $dom_orders = new DomDocument('1.0', 'utf-8');
+            $dom_orders->load('orders.xml', LIBXML_NOBLANKS);
+            $dom_orders->formatOutput = true;
+            $orders = $dom_orders->getElementsByTagName('order');
+
+            foreach ($orders as $order) {
+                if ($order->childNodes->item(0)->nodeValue == $_POST['delete']) {
+                    $order->parentNode->removeChild($order);
+                    $dom_orders->save('orders.xml');
+                    echo "<meta http-equiv=\"refresh\" content=\"0;URL=view_orders.php\">";
+                }
+            }
+        }
+    ?>
     <script src="editOrder.js"></script>
 </body>
+<form id="delete" action="" method="post"></form>
 </html>
