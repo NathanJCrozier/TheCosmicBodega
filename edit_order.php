@@ -72,7 +72,7 @@
             </div>
             <div class="col">
                 <div class="d-flex justify-content-end">
-                    <a href="view_orders.php"><button type="button" class="btn btn-danger ms-2">Cancel</button></a>
+                    <a href="view_orders.php"><button type="button" class="btn btn-danger ms-2">Back</button></a>
                     <button type="submit" form="add" name="add" class="btn btn-primary ms-2">Add a product</button>
                     <input type="submit" class="btn btn-primary ms-2" value="Save" name="save"></button>
                 </div>

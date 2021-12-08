@@ -22,7 +22,20 @@
     <customer>The Mighty Ferlan of Scarolok</customer>
     <fulfillment>Fulfilled</fulfillment>
     <total>1700.00</total>
-    <items>5</items>
+    <items>
+      <item>
+        <name>Ramoray goo</name>
+        <price>233.00</price>
+        <quantity>2</quantity>
+        <total>466</total>
+      </item>
+      <item>
+        <name>Gork Blapor</name>
+        <price>176</price>
+        <quantity>1</quantity>
+        <total>176</total>
+      </item>
+    </items>
     <delivery>Express Delivery</delivery>
   </order>
   <order>
@@ -59,7 +72,14 @@
     <customer>Hapnir Moban</customer>
     <fulfillment>Ready for delivery</fulfillment>
     <total>600.00</total>
-    <items>3</items>
+    <items>
+      <item>
+        <name>Mawal Teeth</name>
+        <price>580</price>
+        <quantity>2</quantity>
+        <total>1160</total>
+      </item>
+    </items>
     <delivery>Free Shipping</delivery>
   </order>
   <order>
@@ -68,7 +88,14 @@
     <customer>Blolorm Luxons</customer>
     <fulfillment>Unfulfilled</fulfillment>
     <total>1300.00</total>
-    <items>4</items>
+    <items>
+      <item>
+        <name>Korark Egg</name>
+        <price>800</price>
+        <quantity>4</quantity>
+        <total>3200</total>
+      </item>
+    </items>
     <delivery>Express Delivery</delivery>
   </order>
 </orderListing>
