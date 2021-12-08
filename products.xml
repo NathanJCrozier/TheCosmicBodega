@@ -105,5 +105,129 @@
       <i_height> </i_height>
     </product>
   </Pantry>
-  <Dairy_and_Eggs/>
+  <Dairy_and_Eggs>
+
+    <product>
+      <id>11</id>
+      <name>Frigganoli zygote</name>
+      <price>768</price>
+      <description>Fertilzed egg cell from the Frigganoli creature native to planet LIUQ 3Z8.</description>
+      <image>images/zygote.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>12</id>
+      <name>Unknown creature egg</name>
+      <price>354</price>
+      <description>Unknown creature egg picked up along the way by our space travelling providers.</description>
+      <image>images/unknownegg.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>13</id>
+      <name>Stratmos cheese</name>
+      <price>3452</price>
+      <description>Cheese made from Stratmos milk. Aged 3 light years.</description>
+      <image>images/bluecheese.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>14</id>
+      <name>Dragniwazon milk</name>
+      <price>276</price>
+      <description>Dragniwazon milk. Commonly consumed in Igregon planet for it's impressive health properties. 435 ml.</description>
+      <image>images/skyrim-potion.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>15</id>
+      <name>Milky Way</name>
+      <price>23674</price>
+      <description>A taste of the cosmos. 354 ml.</description>
+      <image>images/milkypotion.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>16</id>
+      <name>Wheel of moon cheese</name>
+      <price>921</price>
+      <description>Moon Lilles L9AH delicacy. 45 cm in diameter. 54 lbs.</description>
+      <image>images/moon-png-transparent.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+  </Dairy_and_Eggs>
+
+  <Beverages>
+
+    <product>
+      <id>17</id>
+      <name>Alloy Drum</name>
+      <price>499</price>
+      <description>Alloy Drum® non-alcoholic beer is imported from Venus, Jupiter and Cedna. This full bodied crisp beer starts with a gentle maltiness and clean finish.</description>
+      <image>https://user-images.githubusercontent.com/92217346/136717356-9e3ad837-2568-427a-800e-fae31e8215d8.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>18</id>
+      <name>Hexenon</name>
+      <price>339</price>
+      <description>Fill up on vitamin C with this refreshing hexenon juice without pulp, not from concentrate and 100% pure.</description>
+      <image>https://user-images.githubusercontent.com/92217346/136717723-6cfe56b6-4f25-4f62-847f-5ac624c7e06b.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>19</id>
+      <name>Nitain Extract</name>
+      <price>199</price>
+      <description>Enjoy the clear lemon-lime refreshment of Nitrain Extract® with its crisp, clean, great taste. It is made with 100% natural flavours, and has no colour and no caffeine. Perfect size to be enjoyed with meals, snacks or on the go.</description>
+      <image>https://user-images.githubusercontent.com/92217346/136717712-a677e262-b0cc-4504-98ee-a5960d3c7fcf.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>20</id>
+      <name>Beta Corruptor</name>
+      <price>559</price>
+      <description>This classic Beta Corruptor® tea is a delicious traditional drink made from black tea. It will give all your mornings the authentic taste of Pluto.</description>
+      <image>https://user-images.githubusercontent.com/92217346/136717690-f4554e51-8be1-4cc3-8e97-2a5ef30c780b.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>21</id>
+      <name>Pyrus Essence</name>
+      <price>499</price>
+      <description>Pyrus Essence® is a great tasting sports drink made with natural flavours. Formulated with an exclusive ION4 Advanced Electrolyte System, Pyrus Essence® helps replenish sodium, potassium, calcium and magnesium.</description>
+      <image>https://user-images.githubusercontent.com/92217346/136717490-c0cb4fe5-bfdf-4f6f-b68c-15b374d1e6c3.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+
+    <product>
+      <id>22</id>
+      <name>Sentirum</name>
+      <price>1299</price>
+      <description>Sentirum® brings together rich, soothing flavours like gorgacius, buttery auron, toasted kuva and sweet thaumica balanced by the warm zest of frumble peel and a light, oaky finish.</description>
+      <image>https://user-images.githubusercontent.com/92217346/136717490-c0cb4fe5-bfdf-4f6f-b68c-15b374d1e6c3.png</image>
+      <i_width>width="400px"</i_width>
+      <i_height> </i_height>
+    </product>
+  </Beverages>
 </aisle>
