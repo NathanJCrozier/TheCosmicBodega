@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!file_exists('users/' . $_SESSION['username'] . '.xml')){
+    header('Location: login1.php');
+    die;
+}
+?>
+
 <!DOCTYPE html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="styles.css" rel="stylesheet" >
@@ -52,7 +60,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="orders.html">The Dark Side of the Bodega</a>
+            <a class="nav-link" href="view_orders.php">The Dark Side of the Bodega</a>
           </li>
 
           <li class="nav-item">

@@ -49,7 +49,7 @@
               <a class="nav-link" href="javascript:void(0)">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="orders.html">Orders</a>
+              <a class="nav-link" href="view_orders.php">Orders</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product_list.php">Products</a>
