@@ -32,7 +32,7 @@ Employees will be able to:
 
 ## Link
 Link to the current version of the platform: 
-https://nathanjcrozier.github.io/TheCosmicBodega/
+https://users.encs.concordia.ca/~n_crozie/
 
 
 
